@@ -1,2 +1,15 @@
 FONCTION ConvertIntoMorseCode(string userEntry)
-	
+	TableauDeMorse[]
+	TableauAlphabet[]
+	ListIndexUserEntry[]
+	string userEntryMorse
+	POUR CHAQUE char DANS userEntry
+		trouver l'index dans TableauAlphabet
+		ajouter l'index dans ListIndexUserEntry
+	FIN POUR
+	POUR CHAQUE int DANS ListIndexUserEntry
+		trouver la correspondance en morse
+		ajouter le bout de morse à userEntryMorse
+	FIN POUR
+	RETOURNER userEntryMorse
+FIN FONCTION	
