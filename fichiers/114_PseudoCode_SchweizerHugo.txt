@@ -1,0 +1,2 @@
+FONCTION ConvertIntoMorseCode(string userEntry)
+	
