@@ -29,12 +29,17 @@ namespace CouteauSuisse
             Console.Write("~~Couteau Suisse~~");
             Console.ResetColor();
             Console.WriteLine(" !\n");
-            Console.Write("Veuillez choisir une option (1-3) :");
+
+            Console.Write("=== ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("Couteau Suisse");
+            Console.ResetColor();
+            Console.Write(" - Utilitaires ===");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"\t [Son : {SoundStateString(soundState)}]");
             Console.ResetColor();
             Console.WriteLine("N° 1 : Convertire en code morse !");
-            Console.WriteLine("N° 2 : Work In Progress!");
+            Console.WriteLine("N° 2 : Convertir des nombres entre différentes bases (Décimal <> Binaire <> Octal) et (Décimal <> Hexadécimal)");
             Console.WriteLine("N° 3 : Work In Progress!");
             if (soundState)
             {
@@ -63,6 +68,7 @@ namespace CouteauSuisse
             switch (userEntry)
             {
                 case "1": MorseCode.ShowMorseCode(MorseCode.ConvertIntoMorseCode(), soundState); break;
+                case "2": ConvertBase.ShowMenu();break;
                 case "4": soundState = !soundState; Console.Clear(); break;
                 default: Validation(); break;
             }
