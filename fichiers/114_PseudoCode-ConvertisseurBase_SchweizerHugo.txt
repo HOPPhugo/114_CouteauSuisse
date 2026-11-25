@@ -1,0 +1,12 @@
+private List<int> ConvertDecimalToBinary(UserEntry){
+	ListBinary[];
+	bool progress = true;
+	int rest = UserEntry;
+	while(converted){
+		ListBinary.insert(0,UserEntry % 2)
+		rest = UserEntry/2;
+		UserEntry = !(rest == 0);
+		
+	}
+	return ListBinary[];
+}
